@@ -1,0 +1,41 @@
+<!--pages/dypebook/typebook.wxml-->
+<view class='contain'>
+<view class='book-item-type' >
+
+<!-- 书籍类型集合名 start -->
+<view class='book-type-name' >
+<view><text>{{books.title}}</text></view>
+</view>
+<!-- 书籍类型集合名 stop -->
+<!-- 书籍信息start -->
+<navigator wx:for="{{books.books}}" wx:key="{{index}}" url='/pages/details/details?id={{item._id}}'>
+<view class='book-detail' >
+<!-- 书籍信息left start -->
+<view class='book-dl'>
+<image src="{{item.img}}"></image>
+</view>
+<!-- 书籍信息left stop-->
+
+<!-- 书籍信息right start-->
+<view class='book-dr'>
+    <view>
+        <view class='book-name'><text>{{item.title}}</text></view>
+        <view class='book-drec'>{{item.desc}}</view>
+    </view>
+    <!-- 底部详情 -->
+    <view class='book-bot-d'>
+          <text>{{item.author}}</text>
+           <text>6天后前端开发{{item.looknums}}人在看</text>
+    </view>
+
+</view>
+<!-- 书籍信息right stop-->
+</view>
+</navigator>
+<!-- 书籍信息stop -->
+<view class='loadingover'><text>loading over</text></view>
+</view>
+
+
+<!-- book-item -type 书籍类型stop -->
+</view>

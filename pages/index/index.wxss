@@ -1,0 +1,110 @@
+/**index.wxss**/
+/* //设置轮播图样式 start*/
+.container{
+  height: 100%;
+}
+.swiperwraper{
+  padding: 0 auto;
+  width: 90%;
+  text-align: center
+}
+.lubocontainer{
+  padding: 0 2%
+}
+.swiperwraper image{
+  width: 100%;
+}
+/* //设置轮播图样式 stop*/
+/* 设置书籍信息css start */
+.book-list-inner{
+  width: 96%;
+  padding: 0 2%;
+  padding-top: 30rpx;
+
+}
+
+.book-type-name view{
+  display: flex;
+  padding-left: 2%;
+  border-left: 1px solid black;
+  justify-content: space-between;
+
+}
+.book-type-name text:nth-of-type(1){
+  font-size: 30rpx;
+  font-weight: 700;
+  
+}
+.book-type-name text:nth-of-type(2){
+  font-size: 28rpx;
+  color: #666;
+}
+/* 设置书籍信息css stop */
+.book-detail{
+  display: flex;
+
+
+}
+.book-detail .book-dl{
+  padding-top: 2%;
+
+}
+.book-detail .book-dl image{
+  width: 200rpx;
+  height: 300rpx;
+  border: 1px solid #666;
+  
+}
+.book-detail .book-dr{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2%;
+    width: 100%;
+}
+.book-dr .book-name text{
+  font-size: 30rpx;
+  font-weight: 700;
+  color: #2b2b2b
+  
+
+}
+.book-dr .book-drec{
+   display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-top: 15rpx;
+  font-size: 25rpx;
+  color: #666;
+ 
+}
+.book-dr .book-bot-d{
+  display: flex;
+  justify-content: space-between
+}
+.book-dr .book-bot-d text{
+  font-size: 25rpx;
+  color: #666;
+}
+.loadingover{
+  text-align: center;
+  height: 80rpx;
+  color: #333;
+  background-color:#f1f1f1; 
+  line-height: 80rpx;
+}
+.loadingover text{
+  background-color: #f1f1f1;
+  z-index: 333;
+  font-size: 25rpx;
+}
+.jiazai{
+ display: flex;
+ justify-content:space-evenly
+}
+.loadingover image{
+  width: 80rpx;
+  height: 100%;
+
+}

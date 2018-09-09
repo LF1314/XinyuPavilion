@@ -1,0 +1,37 @@
+/* pages/articletype/articletype.wxss */
+page{
+  background-color: #f3f3;
+  height: 100%;
+}
+.wraper{
+  height: 100%;
+  padding: 2%;
+  
+
+}
+.inner{
+
+  height: 100%;
+  background-color: #f3f3;
+  padding: 30rpx 40rpx;
+}
+.wxfor{
+  display: flex;
+  justify-content: space-between;
+  height: 100rpx;
+  line-height: 100rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1px dashed #fff;
+  margin-top: 30rpx;
+}
+.wxfor image{
+   width: 100rpx;
+   height: 100rpx;
+   border-radius: 10rpx;
+
+}
+.wxfor text{
+  font-size: 30rpx;
+  color: #555;
+  
+}

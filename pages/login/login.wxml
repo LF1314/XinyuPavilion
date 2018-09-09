@@ -1,0 +1,34 @@
+<!--pages/login/login.wxml-->
+<view wx:for="{{readlist}}" wx:key="{{index}}" class='wraper' >
+<view class='book-detail' >
+<!-- 书籍信息left start -->
+<view class='book-dl'>
+<image src="{{item.book.img}}"></image>
+</view>
+<!-- 书籍信息left stop-->
+
+<!-- 书籍信息right start-->
+<view class='book-dr'>
+    <view>
+        <view class='book-name'><text>{{item.book.title}}</text></view>
+        <view class='readjindu'>
+
+        <view>  <progress percent="{{num[index]}}" show-info stroke-width= "3" active />
+         
+        </view>
+          <text>阅读到{{item.title.index}}章{{item.title.title}}</text>
+        </view>
+    </view>
+    <!-- 底部详情 -->
+    <view class='book-bot-d'>
+        <navigator url='/pages/readbook/readbook?id={{item.title._id}}&book_id={{item.title.bookId}}'> <button >继续阅读</button></navigator>
+       <navigator url='/pages/details/details?id={{item.title.bookId}}'>
+         <button >查看文档</button>
+       </navigator>
+    </view>
+
+</view>
+<!-- 书籍信息right stop-->
+</view>
+</view>
+<!-- 书籍信息stop -->

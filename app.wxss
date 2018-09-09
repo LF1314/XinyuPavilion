@@ -1,0 +1,10 @@
+
+.isloading{
+  width: 300rpx;
+  position: absolute;
+  z-index: 999;
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%)
+  
+}

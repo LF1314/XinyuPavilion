@@ -1,0 +1,53 @@
+
+<!-- 书籍详情页面 -->
+<view class='containder'>
+
+<!-- 上半部分书籍信息start -->
+<view class='book-details-wraper'>
+
+<view class='book-message'>
+<view class='book-img'><image src="{{bookdata.data.img}}"></image></view>
+<view class='book-dr'>
+<view class='book-name'><text>{{bookdata.data.title}}</text></view>
+<!-- 书籍其信息 start -->
+<view class='book-other'>
+<text>作者：{{bookdata.data.author}}</text>
+<text>{{bookdata.data.looknums}}人在看</text>
+<text>0人喜欢</text>
+</view>
+<!-- 书籍其信息 stop -->
+</view>
+</view>
+<!-- 书籍信息 -->
+ <view class='button'>
+<button bindtap='collect' disabled="{{iscollect}}"> {{iscollect ? "已收藏" : "收藏"}}</button>
+<button open-type="share">分享好友</button>
+</view>
+
+</view>
+<!-- 上半部分书籍信息stop -->
+<view class='line'></view>
+  <view>
+     <view class='book-desc'>
+     <text>简介</text>
+     </view>
+     <view class='book-dcontent'>
+     <text>{{bookdata.data.desc}}</text>
+     </view>
+     <view class='lookmulu'>
+   <view class='look-one'>
+     <text>查看目录</text>
+     <text>共{{bookdata.length}}章</text>
+   </view>
+
+   <text class='time'>2018年7月1日</text>
+     </view>
+     <view class='line m-50'></view>
+
+   </view> 
+<view class='button-num'>
+<button bindtap='readbook'>
+阅读文章
+</button>
+</view>
+</view>

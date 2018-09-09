@@ -1,0 +1,45 @@
+<!--pages/readbook/readbook.wxml-->
+<view class='content'>
+
+<image wx:if="{{isloading}}" class='isloading' src='../../images/isloading.svg'></image>
+<view wx:else>
+<!-- <import src="/towxml/entry.wxml"/> -->
+
+
+<view class='wraper'>
+
+<view class='title'>
+
+<text>{{title}}</text>
+
+</view >
+<view class='text' style='font-size: {{font}}rpx' >
+<wemark md="{{article}}"  highlight type="rich-text"></wemark>
+</view>
+
+</view>
+
+
+<!-- 导航栏 -->
+<view class='bottomnav'>
+<view> <icon class='iconfont icon-zuoyou1' bindtap='delarticle'></icon></view>
+<view> <icon class='iconfont icon-cechucaidan' bindtap='changes'></icon></view>
+<view> <icon class='iconfont icon-zitijiada' bindtap='addfont'></icon></view>
+<view> <icon class='iconfont icon-zitijianxiao' bindtap='delfont'></icon></view>
+<view> <icon class='iconfont icon-zuoyou' bindtap='addartilce'></icon></view>
+</view>
+</view>
+<view class='mask' wx:if="{{ishow}}" bindtap='changes' ></view>
+
+<scroll-view scroll-y style='height:1600rpx;' class='nav-daohang {{ishow ? "doing" : "" }}' >
+
+<view wx:for="{{booktitle}}" wx:key ="{{index}}" bindtap='changetitle' id='{{item._id}}'>
+{{item.title}}
+</view>
+
+</scroll-view>
+
+</view>
+
+
+

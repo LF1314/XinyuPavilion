@@ -1,0 +1,72 @@
+/* pages/music/music.wxss */
+page{
+  margin:0;
+  padding: 0;
+}
+.wrapper{
+  height: 100%;
+  width: 100%
+}
+.musicicon{
+  height: 100%;
+  width: 30%;
+ line-height: 80px;
+  
+}
+.musicicon image{
+  margin-top: 16px;
+  width: 48px;
+  height: 48px;
+
+}
+.inner{
+   background-color: #86e6e2;
+  opacity: .5;
+  margin-top: 50px;
+  color: black;
+  padding-left: 10rpx;
+}
+.navbar{
+  display: flex;
+  position: fixed;
+  height: 100rpx;
+  padding: 0 20rpx;
+  text-align: center;
+  line-height: 100rpx;
+  top: 0px;
+  width: 100%;
+  background-color:  #86e6e2;
+  justify-content: space-between;
+  
+
+}
+.navbar text{
+  width: 30%;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  color: rgb(158, 31, 31);
+ 
+}
+.musicmessage{
+  display: flex;
+  height: 160rpx;
+    margin-bottom: 10rpx;
+    margin-top: 10rpx;
+    justify-content: space-around;
+    border-bottom: 1px solid #95a395;
+
+}
+.musicmessage .text1{
+  line-height: 160rpx;
+ height: 160rpx;
+  text-align: center;
+  width: 40%;
+}
+.musicmessage:hover{
+  background-color: #ccffcc;
+
+}
+
+
+

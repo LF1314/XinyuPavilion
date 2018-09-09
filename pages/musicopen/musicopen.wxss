@@ -1,0 +1,40 @@
+/* pages/musicopen/musicopen.wxss */
+page{
+  background-image: url("http://img.zcool.cn/community/0122cd55e6d0c132f875a132677695.png@1280w_1l_2o_100sh.png");
+  background-repeat: no-repeat;
+  background-size: 100% ;
+ background-position-y: -33rpx;
+}
+.messages{
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40rpx;
+}
+.messages .songname{
+  font-size: 40rpx;
+  padding: 10rpx;
+  color: rgb(90, 69, 2)
+
+}
+.messages .singername{
+  font-size: 25rpx;
+  color: rgb(233, 15, 62);
+  margin-top: 10rpx;
+}
+.aud{
+  width: 100rpx;
+  height: 100rpx;
+  opacity:0.9;
+  border-radius: 50rpx;
+  position: absolute;
+  
+  margin-left: -50rpx;
+  text-align: center;
+}
+.aud1{
+   left: 50%;
+   bottom: 21.5%;
+}

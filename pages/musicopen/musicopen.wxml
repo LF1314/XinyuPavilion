@@ -1,0 +1,14 @@
+<!--pages/musicopen/musicopen.wxml-->
+<view>
+<view class='messages'>
+<text class='songname'>{{songname}}</text>
+<text class='singername'>{{singername}}</text>
+</view>
+<audio class='aud' poster="{{poster}}" name="{{name}}" author="{{author}} " src="http://ws.stream.qqmusic.qq.com/C100{{mid}}.m4a?fromtag=0&guid=126548448" id="myAudio" loop></audio>
+
+<button wx:if="{{shows}}" class='aud aud1' type='prprimary' bindtap='audioPlay' >||</button>
+<button wx:els class='aud aud1' type='prprimary' bindtap='stopplay'>{{"<>"}}</button>
+
+
+
+</view>

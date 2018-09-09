@@ -1,0 +1,16 @@
+<!--pages/articletype/articletype.wxml-->
+<view class='wraper'>
+<view class='inner'>
+
+<navigator class='wxfor' wx:for="{{arctiletype}}" wx:key="{{index}}" url='/pages/dypebook/typebook?id={{item._id}}'> 
+<image src='{{item.icon}}'></image>
+
+<text>{{item.title}}</text>
+</navigator>
+
+</view>
+
+
+
+
+</view>

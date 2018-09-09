@@ -1,0 +1,16 @@
+/* pages/book/book.wxss */
+.book-mulu{
+  padding: 4%;
+
+}
+.text-warper{
+  padding-bottom: 3rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 2rpx dashed #333;
+}
+.text-warper text{
+  line-height: 2.0;
+  font-size: 28rpx;
+  color: #666;
+}

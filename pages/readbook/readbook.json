@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "Read book",
+    "usingComponents": {
+      "wemark": "../../wemark/wemark"
+    }
+}

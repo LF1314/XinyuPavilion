@@ -1,0 +1,36 @@
+<!--pages/collectionlist/collectionlist.wxml-->
+<view class='wraper'>
+<view class='book-type-name' >
+<view><text>收藏列表</text></view>
+</view>
+<!-- 书籍信息start -->
+<view wx:for="{{collectios}}" wx:key="{{index}}" >
+<view class='book-detail' >
+<!-- 书籍信息left start -->
+<view class='book-dl' bindtap='Cancelcollection' id='{{item.book._id}}'>
+<image src="{{item.book.img}}"></image>
+</view>
+<!-- 书籍信息left stop-->
+
+<!-- 书籍信息right start-->
+<navigator url='/pages/details/details?id={{item.book._id}}'>
+<view class='book-dr'>
+    <view>
+        <view class='book-name'><text>{{item.book.title}}</text></view>
+        <view class='book-drec'>{{item.book.desc}}</view>
+    </view>
+    <!-- 底部详情 -->
+    <view class='book-bot-d'>
+          <text>{{item.book.author}}</text>
+           <text>6天后前端开发{{item.book.looknums}}人在看</text>
+    </view>
+
+</view>
+</navigator>
+<!-- 书籍信息right stop-->
+
+</view>
+</view>
+<view class='loadingover'><text>loading over</text></view>
+
+</view>

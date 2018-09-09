@@ -1,0 +1,53 @@
+<!--pages/person/person.wxml-->
+
+<view>
+   <image class='img' src='{{imgurl[imgid].img}}'></image>
+<view class='person-message'>
+ 
+   <view class='person-wraper'>
+        <view class='person-img'><image src='{{userinfo.avatarUrl}}'></image></view>
+        <view class='person-name'>
+         <text>{{userinfo.nickName}}</text>
+         <text class='personjianje'>这个小伙懒得写简介</text>
+         
+     </view>
+   </view>
+
+   <view class='person-other'>
+      <view class='shou-chang' bindtap='Collectionlist'>
+          <text> {{collectios}}</text>
+          <text>收藏</text>
+       </view>
+       <view class='shou-chang'>
+         <text>{{num}}</text>
+          <text>关注</text>
+        </view>
+   </view>
+
+</view>
+
+<view class='middlenav'  wx:if="{{canIUse}}">
+
+<view bindtap='listenmusic'><icon class='iconfont icon-yuedu'></icon><text>我的音乐</text></view>
+<view bindtap='Collectionlist'><icon class='iconfont icon-shoucang'></icon> <text>我的收藏</text></view>
+<view bindtap='articletype'><icon class='iconfont icon-wenzhang-'></icon><text>文章分类</text></view>
+<view bindtap='changetheam'><icon class='iconfont icon-zhuti'></icon><text>更改主题</text></view>
+
+</view>
+<view wx:else>  
+   <button  class='login' open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">登录</button>
+</view>
+<scroll-view scroll-y class='moretheam {{ishowthem ? "active" : ""}}'>
+<view bindtap='changeimg' wx:for="{{imgurl}}" wx:key="{{index}}" class='themlist' id="{{item.index}}">
+ <image src='{{item.img}}'></image>
+ <text>{{item.name}}</text>
+</view>
+</scroll-view>
+
+
+
+</view>
+
+
+
+

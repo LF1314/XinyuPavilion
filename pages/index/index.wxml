@@ -1,0 +1,88 @@
+
+<view class='container'>
+
+<image wx:if="{{isloading}}" class='isloading' src='../../images/isloading.svg'></image>
+
+<view wx:else>
+<view class='lubocontainer'>
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+   <navigator url="/pages/details/details?id={{item.book._id}}">
+    <swiper-item  class='swiperwraper'>
+      <image src="{{item.img}}" class="slide-image" width="355" height="150"/>
+   
+    </swiper-item>
+   </navigator>
+  </block>
+</swiper>
+</view>
+<view class='body-containe'>
+<!-- book-list-type-view start -->
+<view class='book-list-inner'>
+<!-- book-item -type 书籍类型 start -->
+<view class='book-item-type'  wx:for="{{books}}" wx:key="{{index}}">
+
+<!-- 书籍类型集合名 start -->
+<view class='book-type-name' >
+<view><text>{{item.title}}</text><text bindtap='jumpmore' id='{{item._id}}'>更多...</text></view>
+</view>
+<!-- 书籍类型集合名 stop -->
+<!-- 书籍信息start -->
+<navigator wx:for="{{item.books}}" wx:key="{{index}}" url='/pages/details/details?id={{item._id}}'>
+<view class='book-detail' >
+<!-- 书籍信息left start -->
+<view class='book-dl'>
+<image src="{{item.img}}"></image>
+</view>
+<!-- 书籍信息left stop-->
+
+<!-- 书籍信息right start-->
+<view class='book-dr'>
+    <view>
+        <view class='book-name'><text>{{item.title}}</text></view>
+        <view class='book-drec'>{{item.desc}}</view>
+    </view>
+    <!-- 底部详情 -->
+    <view class='book-bot-d'>
+          <text>{{item.author}}</text>
+           <text>6天后前端开发{{item.looknums}}人在看</text>
+    </view>
+</view>
+<!-- 书籍信息right stop-->
+</view>
+</navigator>
+<!-- 书籍信息stop -->
+
+</view>
+<!-- book-item -type 书籍类型stop -->
+</view>
+<!-- book-list-view stop -->
+</view>
+</view>
+
+<view hidden='{{isloading}}'>
+<view wx:if="{{!showmore}}" class='loadingover'>
+<view class='lines'></view>
+<text>到底了小伙子</text>
+</view>
+<view wx:else class='loadingover jiazai'>
+<image src='../../images/jiazai.svg'></image>
+<text >正在加载中</text>
+</view>
+</view>
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+

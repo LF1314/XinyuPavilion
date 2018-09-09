@@ -1,0 +1,75 @@
+/* pages/dypebook/typebook.wxss */
+.contain{
+  padding: 3%;
+}
+.book-type-name view{
+  display: flex;
+  padding-left: 2%;
+  border-left: 1px solid black;
+  justify-content: space-between;
+
+}
+.book-type-name text:nth-of-type(1){
+  font-size: 30rpx;
+  font-weight: 700;
+  
+}
+.book-type-name text:nth-of-type(2){
+  font-size: 28rpx;
+  color: #666;
+}
+/* 设置书籍信息css stop */
+.book-detail{
+  display: flex;
+
+
+}
+.book-detail .book-dl{
+  padding-top: 2%;
+
+}
+.book-detail .book-dl image{
+  width: 200rpx;
+  height: 300rpx;
+  border: 1px solid #666;
+  
+}
+.book-detail .book-dr{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2%;
+    width: 100%;
+}
+.book-dr .book-name text{
+  font-size: 30rpx;
+  font-weight: 700;
+  color: #2b2b2b
+  
+
+}
+.book-dr .book-drec{
+   display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-top: 15rpx;
+  font-size: 25rpx;
+  color: #666;
+ 
+}
+.book-dr .book-bot-d{
+  display: flex;
+  justify-content: space-between
+}
+.book-dr .book-bot-d text{
+  font-size: 25rpx;
+  color: #666;
+}
+.loadingover{
+  margin-top: 20rpx;
+  text-align: center;
+  width: 100%;
+  font-size: 28rpx;
+  color: #333;
+}

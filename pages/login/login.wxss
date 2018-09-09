@@ -1,0 +1,64 @@
+/* pages/login/login.wxss */
+.wraper{
+  padding-top: 20rpx;
+  padding: 0 3%
+}
+.book-detail{
+  display: flex;
+
+
+}
+.book-detail .book-dl{
+  padding-top: 2%;
+
+}
+.book-detail .book-dl image{
+  width: 200rpx;
+  height: 300rpx;
+  border: 1px solid #666;
+  
+}
+.book-detail .book-dr{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2%;
+    width: 100%;
+}
+.book-dr .book-name text{
+  font-size: 30rpx;
+  font-weight: 700;
+  color: #2b2b2b
+  
+
+}
+.book-dr .book-drec{
+   display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-top: 15rpx;
+  font-size: 25rpx;
+  color: #666;
+ 
+}
+.book-dr .book-bot-d{
+  display: flex;
+  justify-content: space-between
+}
+.book-dr .book-bot-d button{
+  font-size: 20rpx;
+  color: #666;
+  width: 150rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+
+}
+.readjindu{
+  font-size: 20rpx;
+  color: #666;
+  margin-top: 20rpx;
+}
+.readjindu view{
+  padding-bottom: 30rpx;
+}
